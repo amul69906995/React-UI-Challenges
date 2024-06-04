@@ -1,0 +1,35 @@
+
+/* Common styles for .nav and .navItem */
+.nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navItem {
+    margin: 0 1.5rem;
+  }
+  
+  /* Styles outside media query */
+  .hamburger {
+    display: none;
+  }
+  .open{
+    display: flex;
+    list-style: none;
+  }
+  
+  /* Media query styles */
+  @media (max-width: 786px) {
+    .nav {
+      display: none;
+    }
+  
+    .open {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
